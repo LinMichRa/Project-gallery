@@ -1,10 +1,15 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import deathnote from '../assets/img/deathnote.jpg'
 
-export const Anime5 = () => {
+export const Anime5 = ({className}) => {
   return (
-    <div>
-      <img src={deathnote} alt="Anime DeathNote" />
+    <div className={`image-container ${className}`}>
+      <img src={deathnote} alt="Anime DeathNote" className='image'/>
     </div>
   )
 }
+
+Anime5.propTypes ={
+  className: PropTypes.string
+};

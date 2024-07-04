@@ -9,44 +9,44 @@ import { Anime6 } from './Anime6';
 
 const Navigation = () => {
   return (
-    <div>
-      <Link to="/anime1">
-        <figure>
+    <div className="container mt-4 father">
+      <Link to="/anime1" className="links">
+        <figure className="image-size">
           <Anime1 />
           <figcaption>Anime 1</figcaption>
         </figure>
       </Link>
 
-      <Link to="/anime2">
-        <figure>
+      <Link to="/anime2" className="links">
+        <figure className="image-size">
           <Anime2 />
           <figcaption>Anime 2</figcaption>
         </figure>
       </Link>
 
-      <Link to="/anime3">
-        <figure>
+      <Link to="/anime3" className="links">
+        <figure className="image-size">
           <Anime3 />
           <figcaption>Anime 3</figcaption>
         </figure>
       </Link>
 
-      <Link to="/anime4">
-        <figure>
+      <Link to="/anime4" className="links">
+        <figure className="image-size">
           <Anime4 />
           <figcaption>Anime 4</figcaption>
         </figure>
       </Link>
 
-      <Link to="/anime5">
-        <figure>
+      <Link to="/anime5" className="links">
+        <figure className="image-size">
           <Anime5 />
           <figcaption>Anime 5</figcaption>
         </figure>
       </Link>
 
-      <Link to="/anime6">
-        <figure>
+      <Link to="/anime6" className="links">
+        <figure className="image-size">
           <Anime6 />
           <figcaption>Anime 6</figcaption>
         </figure>

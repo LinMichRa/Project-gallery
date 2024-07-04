@@ -14,13 +14,16 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <div>
+        <h1 id="title" className='text-center my-3'>Proyecto Galería</h1>
+      </div>
         <Routes>
-          <Route path="/anime1" element={<Anime1/>}/>
-          <Route path="/anime2" element={<Anime2/>}/>
-          <Route path="/anime3" element={<Anime3/>}/>
-          <Route path="/anime4" element={<Anime4/>}/>
-          <Route path="/anime5" element={<Anime5/>}/>
-          <Route path="/anime6" element={<Anime6/>}/>
+          <Route path="/anime1" element={<Anime1 className='image-size'/>}/>
+          <Route path="/anime2" element={<Anime2 className='image-size'/>}/>
+          <Route path="/anime3" element={<Anime3 className='image-size'/>}/>
+          <Route path="/anime4" element={<Anime4 className='image-size'/>}/>
+          <Route path="/anime5" element={<Anime5 className='image-size'/>}/>
+          <Route path="/anime6" element={<Anime6 className='image-size'/>}/>
         </Routes>
         <Navigation />
       </BrowserRouter>
