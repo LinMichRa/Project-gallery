@@ -7,6 +7,7 @@ import { Anime3 } from './components/Anime3';
 import { Anime4 } from './components/Anime4';
 import { Anime5 } from './components/Anime5';
 import { Anime6 } from './components/Anime6';
+import Navigation from './components/Navigation';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/anime5" element={<Anime5/>}/>
           <Route path="/anime6" element={<Anime6/>}/>
         </Routes>
+        <Navigation />
       </BrowserRouter>
     </>
   )
