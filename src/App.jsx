@@ -1,22 +1,27 @@
 
-import './App.css'
-import { Anime1 } from './components/Anime1'
-import { Anime2 } from './components/Anime2'
-import { Anime3 } from './components/Anime3'
-import { Anime4 } from './components/Anime4'
-import { Anime5 } from './components/Anime5'
-import { Anime6 } from './components/Anime6'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import { Anime1 } from './components/Anime1';
+import { Anime2 } from './components/Anime2';
+import { Anime3 } from './components/Anime3';
+import { Anime4 } from './components/Anime4';
+import { Anime5 } from './components/Anime5';
+import { Anime6 } from './components/Anime6';
 
 function App() {
 
   return (
     <>
-    <Anime1></Anime1>
-    <Anime2></Anime2>
-    <Anime3></Anime3>
-    <Anime4></Anime4>
-    <Anime5></Anime5>
-    <Anime6></Anime6>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/anime1" element={<Anime1/>}/>
+          <Route path="/anime2" element={<Anime2/>}/>
+          <Route path="/anime3" element={<Anime3/>}/>
+          <Route path="/anime4" element={<Anime4/>}/>
+          <Route path="/anime5" element={<Anime5/>}/>
+          <Route path="/anime6" element={<Anime6/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
